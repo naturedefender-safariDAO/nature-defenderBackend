@@ -1,0 +1,4 @@
+node_modules/*
+.env
+web3.js
+authorizeAdmin.js
