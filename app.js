@@ -7,6 +7,7 @@ const userRoutes = require("./routes/userRoutes");
 const cookieParser = require('cookie-parser');
 const projectRoutes = require("./routes/projectRoutes");
 const app = express();
+
 //middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json({ extended: false }));

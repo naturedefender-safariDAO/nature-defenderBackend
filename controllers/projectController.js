@@ -60,11 +60,11 @@ module.exports.createProject = async (req, res) => {
   } = req.body;
 
   try {
-    console.log("req.user:", req.user);
+    // console.log("req.user:", req.user);
     const createdBy = req.user._id;
     //check if user exist
     const user = await User.findById(createdBy);
-    console.log(user)
+    //console.log(user)
     const projects = await Project.create({
       companyName,
       companyLocation,
